@@ -15,7 +15,7 @@ console.log("1. Adicione um ID exclusivo a cada produto começando em 1.");
 let id = 1;
 for (let index = 0; index < products.length; index++) {
     const element = products[index];
-    element.id = id++;
+    element.id = id++; //essa linha tb pode ser feita assim: products['id'] = index + 1
 }
 products.forEach(element => {
     console.log(JSON.stringify(element));
